@@ -1,0 +1,110 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: sans-serif;
+  background-color: #0d526a;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.black {
+  background-color: #231f20;
+}
+
+.green {
+  background-color: #7fbb42;
+}
+
+.greenborder {
+  border: solid #7fbb42;
+  color: white;
+  border-width: .4em 0;
+}
+
+body {
+  margin: 0;
+}
+
+svg {
+  width: 100%;
+  stroke-width: 0;
+}
+
+.mw {
+  max-width: 45em;
+  margin: auto;
+}
+
+a {
+  color: #7fbb42;
+  text-decoration: none;
+}
+
+li {
+  background-color: black;
+  border-radius: .5em;
+  margin: .5em;
+}
+
+.panel {
+  display: none;
+}
+
+.panel:target {
+  display: block;
+}
+
+.test {
+  position: absolute;
+  right: 0%;
+  top: 27em;
+}
+
+.person {
+  padding-top: 14em;
+}
+
+.couch {
+  height: 100%;
+  max-height: 30em;
+}
+
+@media only screen and (min-width: 27em) {
+
+  .test {
+    top: 19em;
+  }
+
+  .person {
+    padding-top: 17em;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+
+  .person {
+    padding-top: 10em;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+
+  .person {
+    padding-top: 0;
+  }
+
+  .test {
+    right: 22%;
+  }
+}
