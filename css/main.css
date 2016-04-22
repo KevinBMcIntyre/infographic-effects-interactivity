@@ -72,14 +72,14 @@ li:hover {
 .bubble {
   width: 110%;
   transform-origin: center;
-  animation: spin .5s infinite linear alternate;
+  animation: wobble .5s infinite linear alternate;
 }
 
-@keyframes spin {
+@keyframes wobble {
 
   0% { transform: rotate(0deg); }
 
-  100% { transform: rotate(10deg); }
+  100% { transform: rotate(-5deg); }
 }
 
 
