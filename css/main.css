@@ -57,6 +57,10 @@ li {
   margin: .5em;
 }
 
+li:hover {
+  background-color: rgb(196, 216, 46);
+}
+
 .panel {
   display: none;
 }
@@ -64,6 +68,21 @@ li {
 .panel:target {
   display: block;
 }
+
+.bubble {
+  width: 110%;
+  transform-origin: center;
+  animation: spin .5s infinite linear alternate;
+}
+
+@keyframes spin {
+
+  0% { transform: rotate(0deg); }
+
+  100% { transform: rotate(10deg); }
+}
+
+
 
 .test {
   position: absolute;
