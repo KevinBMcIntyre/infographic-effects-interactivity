@@ -58,9 +58,8 @@ li {
 }
 
 li:hover {
-  background-color: rgb(196, 216, 46);
+  background-color: white;
 }
-
 .panel {
   display: none;
 }
@@ -70,9 +69,8 @@ li:hover {
 }
 
 .bubble {
-  width: 110%;
   transform-origin: center;
-  animation: wobble .5s infinite linear alternate;
+  animation: wobble 1s infinite linear alternate;
 }
 
 @keyframes wobble {
