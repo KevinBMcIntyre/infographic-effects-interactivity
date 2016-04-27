@@ -98,8 +98,8 @@ li:hover {
 }
 
 #drop {
-    animation: drip .75s infinite linear;
-    animation-delay: 2s;
+  animation: drip .75s infinite linear;
+  animation-delay: 2s;
 }
 
 @keyframes drip {
@@ -112,11 +112,20 @@ li:hover {
     transform: translateY(800%);
   }
 }
+
 .color {
   background-color: rgb(0, 155, 155);
 }
 
+.way {
+  opacity: 0;
+  width: 100%;
+  transition: all 200ms ease-in;
+}
 
+.way-animate {
+  opacity: 1;
+}
 
 @media only screen and (min-width: 27em) {
 
