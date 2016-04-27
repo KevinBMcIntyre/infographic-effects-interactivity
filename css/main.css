@@ -80,8 +80,6 @@ li:hover {
   100% { transform: rotate(-5deg); }
 }
 
-
-
 .test {
   position: absolute;
   right: 0%;
@@ -96,6 +94,12 @@ li:hover {
   height: 100%;
   max-height: 30em;
 }
+
+.color {
+  background-color: rgb(0, 155, 155);
+}
+
+
 
 @media only screen and (min-width: 27em) {
 
