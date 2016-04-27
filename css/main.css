@@ -98,19 +98,17 @@ li:hover {
 }
 
 #drop {
-    animation: drip 1s infinite linear;
+    animation: drip .75s infinite linear;
 }
 
 @keyframes drip {
 
   0% {
     transform: translateY(0%);
-    opacity: 1;
   }
 
   100% {
-    transform: translateY(400%);
-    opacity: 0;
+    transform: translateY(800%);
   }
 }
 .color {
