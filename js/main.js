@@ -11,9 +11,9 @@ $(function () {
 });
 
 $way.waypoint(function (direction) {
-	if (direction == 'down') {
-		$way.addClass('way-animate');
-	} else {
-		$way.removeClass('way-animate');
-	}
-}, { offset: '80%' });
+  if (direction == 'down') {
+    $way.addClass('way-animate');
+  } else {
+    $way.removeClass('way-animate');
+  }
+}, {offset: '80%'});
