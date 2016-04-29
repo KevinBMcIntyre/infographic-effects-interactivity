@@ -73,6 +73,14 @@ li:hover {
 .bubble {
   transform-origin: center;
   animation: wobble 1s infinite linear alternate;
+  -webkit-animation: wobble 1s infinite linear alternate;
+}
+
+@-webkit-keyframes wobble {
+
+  0% { transform: rotate(0deg); }
+
+  100% { transform: rotate(-3deg); }
 }
 
 @keyframes wobble {
@@ -98,8 +106,19 @@ li:hover {
 }
 
 #drop {
-  animation: drip .75s infinite linear;
+  -webkit-animation: drip .75s infinite linear;
   animation-delay: 2s;
+}
+
+@-webkit-keyframes drip {
+
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(800%);
+  }
 }
 
 @keyframes drip {
