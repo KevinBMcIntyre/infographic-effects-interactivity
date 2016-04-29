@@ -57,6 +57,7 @@ li {
   margin: .5em;
   transition: .2s linear;
   -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
 }
 
 li:hover {
@@ -75,9 +76,17 @@ li:hover {
   transform-origin: center;
   animation: wobble 1s infinite linear alternate;
   -webkit-animation: wobble 1s infinite linear alternate;
+  -moz-animation: wobble 1s infinite linear alternate;
 }
 
 @-webkit-keyframes wobble {
+
+  0% { transform: rotate(0deg); }
+
+  100% { transform: rotate(-3deg); }
+}
+
+@-moz-keyframes wobble {
 
   0% { transform: rotate(0deg); }
 
@@ -108,10 +117,22 @@ li:hover {
 
 #drop {
   -webkit-animation: drip .75s infinite linear;
-  animation-delay: 2s;
+  -moz-animation: drip .75s infinite linear;
+  animation: drip .75s infinite linear;
 }
 
 @-webkit-keyframes drip {
+
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(800%);
+  }
+}
+
+@-moz-keyframes drip {
 
   0% {
     transform: translateY(0%);
@@ -141,6 +162,8 @@ li:hover {
   opacity: 0;
   width: 100%;
   -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 .way-animate {
